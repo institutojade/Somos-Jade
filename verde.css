@@ -1,0 +1,216 @@
+@charset "utf-8";
+
+
+.button {
+    --color: #00A97F;
+    padding: 0.8em 1.7em;
+    background-color: transparent;
+    border-radius: .3em;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: .5s;
+    font-weight: 400;
+    font-size: 17px;
+    border: 1px solid;
+    font-family: inherit;
+    text-transform: uppercase;
+    color: var(--color);
+    z-index: 1;
+   }
+   
+   .button::before, .button::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 50px;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    border-radius: 50%;
+    z-index: -1;
+    background-color: var(--color);
+    transition: 1s ease;
+   }
+   
+   .button::before {
+    top: -1em;
+    left: -1em;
+   }
+   
+   .button::after {
+    left: calc(100% + 1em);
+    top: calc(100% + 1em);
+   }
+   
+   .button:hover::before, .button:hover::after {
+    height: 410px;
+    width: 410px;
+   }
+   
+   .button:hover {
+    color: rgb(10, 25, 30);
+   }
+   
+   .button:active {
+    filter: brightness(.8);
+   }
+   /** Neste bloco específico,o estilo foi importado mas eu irei explicar: a 1 caixa determina o estado inicial do nosso botão a 1 2 e 3 determina a acão de colorir e o modo como ela ocorrerá no item e o 4 e 5 é para a mudança acontecer ao o usuário passar o mousse por cima do elemento */
+
+.container {
+      display: flex;
+      text-aling: center;
+      border: 30px 30px 35px 35px #6ee2e2 solid;
+      width: 1500px;
+}
+
+.container div {
+ 
+    padding: 20px;
+  
+}
+
+.item-box-2 {
+    background-color: #00ad9f;
+   color: #fff;
+
+   
+    
+}
+
+.item-box-3 {
+    background-color: #fff;
+    color: #00ad9f;
+}
+
+.item-box-4 {
+    background-color: #00ad9f;
+    color: #fff;
+}
+
+.item-box-5 {
+    background: #fff;
+    color: #00ad9f;
+}
+
+.Letras {
+    text-decoration: none;
+    font-family: Verdana;
+    font-height: 15px ;
+    font-style: normal;
+    background-color: #00ad9f;
+    border: 20px 20px 25px 25px;
+    color: #ffffff;
+    padding: 5px 10px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.Letras:hover {
+    background-color: #ffbd40;
+}
+
+.texto {
+         text-aling: center;
+         text-decoration: none;
+         font-family: Times New Roman;
+         font-height: 100px;
+         
+       
+   
+}
+
+footer {
+       
+     
+      
+      padding: 20px;
+      width: 1500px;
+      height:  80px;
+      border: 30px 30px 35px 35px ##66cccc solid;
+      background-color: #00ad9f;
+      color: ##cc9a;
+      
+}
+
+
+
+#L { 
+    text-decoration: none;
+    font-family: Verdana;
+    font-height: 15px ;
+    font-style: normal;
+    background-color: #ffffff;
+    border: 20px 20px 25px 25px;
+    color:#00ad9f;
+    padding: 5px 10px;
+    border-radius: 10px;
+    margin-top: 20px;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+#L:hover {
+    
+    color: #ffbd40;
+   
+}
+
+.T:hover {
+    color: #ffbd40;
+}
+
+.barra {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    color: #fff;
+}
+
+@media(max-width:786px) {
+    .body {
+        width: 100%
+    }
+
+    .item-box-1 {
+        width: 100%;
+    }
+    
+   .item-box-2 {
+    width: 100%;
+   }
+    
+   .item-box-3 {
+    width: 100%;
+    
+  }
+
+  .item-box-4 {
+    width: 100%;
+    
+  }
+
+  .item-box-5 {
+    width: 100%;
+    
+  }
+      
+    .outdoor {
+        width: 100%;
+    }
+    
+    img {
+        width: 100%;
+    }
+
+    .Letras {
+        width: 100%;
+    }
+    
+    #L {
+        width: 100%;
+    }
+
+    footer {
+        width: 100%;
+    }
+
+}
